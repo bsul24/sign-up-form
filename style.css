@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+}
+
+aside {
+  background-image: url("./images/background-leaf.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 40%;
+}
+
+main {
+  height: 80vh;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+header {
+  padding-left: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  z-index: 100;
+  padding-left: 40px;
+}
+
+legend {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 24px 0;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+}
+
+.form-row {
+  display: flex;
+}
+
+.form-input:first-child input {
+  margin-right: 40px;
+}
+
+input {
+  padding: 5px;
+  margin-bottom: 24px;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-row:last-of-type input {
+  margin-bottom: 36px;
+}
+
+input:focus {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  /* border: 1px solid #1c7ed6; */
+  outline: 1px solid #1c7ed6;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding-left: 40px;
+}
