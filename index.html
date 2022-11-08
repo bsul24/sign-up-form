@@ -11,58 +11,74 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
     <title>Sign-up Form</title>
   </head>
   <body>
     <aside>
-      <div>ODIN</div>
+      <div class="logo-section">
+        <ion-icon class="logo" name="briefcase-outline"></ion-icon
+        ><span class="logo-text">FORMZZ</span>
+      </div>
     </aside>
     <main>
       <header>
         <p>
-          This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams. Sign up
-          <em>now</em> to get started.
+          <span class="disclaimer">This is not a real online service!</span>
+          It's time for you to move forward and dare to do something bigger.
+          Sign up <em>now</em> to get started.
         </p>
-        <p>You <em>know</em> you want to.</p>
+        <p>Do this for <em>you</em>.</p>
       </header>
-      <form action="#">
-        <legend>Let's do this!</legend>
+      <form id="form" action="">
+        <legend>Join now!</legend>
         <div class="form-row">
           <div class="form-input">
             <label for="first-name">FIRST NAME</label>
-            <input type="text" id="first-name" />
+            <input type="text" id="first-name" required />
           </div>
           <div class="form-input">
             <label for="last-name">LAST NAME</label>
-            <input type="text" id="last-name" />
+            <input type="text" id="last-name" required />
           </div>
         </div>
         <div class="form-row">
           <div class="form-input">
             <label for="email">EMAIL</label>
-            <input type="text" id="email" />
+            <input type="email" id="email" required />
           </div>
           <div class="form-input">
             <label for="phone">PHONE NUMBER</label>
-            <input type="text" id="phone" />
+            <input type="tel" id="phone" required />
           </div>
         </div>
         <div class="form-row">
-          <div class="form-input">
+          <div class="form-input form-input-password">
             <label for="password">PASSWORD</label>
-            <input type="text" id="password" />
+            <input type="password" id="password" />
+            <p class="error-text">&nbsp;</p>
           </div>
           <div class="form-input">
             <label for="password-confirm">CONFIRM PASSWORD</label>
-            <input type="text" id="password-confirm" />
+            <input type="password" id="password-confirm" />
           </div>
         </div>
+        <!-- <button>submit</button> -->
       </form>
       <footer>
-        <button type="submit">Create Account</button>
-        <p>Already have an account? <a href="#">Log in</a></p>
+        <button form="form" class="submit-button" type="submit">
+          Create Account
+        </button>
+        <p>Already have an account? <a href="" class="login">Log in</a></p>
       </footer>
     </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
